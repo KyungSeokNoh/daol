@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: bottom;}
+
+body{
+    font-size: 12px;
+}
+
+#wrap{
+    width: 925px;
+    margin: 0 auto;
+}
+
+#header{
+    /* width: 100%; */
+}
+
+.top_menu{
+    height: 30px;
+    background-color: #ddd;
+    border-bottom: 1px solid gray;
+}
+
+.top_menu ul{
+    text-align: right;
+}
+
+.top_menu ul li{
+    display: inline-block;
+}
+
+.top_menu ul li a{
+    line-height: 30px;
+    margin-right: 10px;
+    /* padding: 0 5px; */
+}
+
+.top_menu ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* logo_ban 영역 */
+.logo_ban{
+    overflow: hidden;
+    /* background-color: mediumaquamarine; */
+}
+
+.logo{
+    float: left;
+    margin-top: 20px;
+}
+
+.banner{
+    float: right;
+}
+
+/* main_menu영역 */
+.main_menu{
+    /* background-color: aqua; */
+}
+
+.main_menu ul{
+    overflow: hidden;
+}
+
+.main_menu ul li{
+    float: left;
+}
+
+.main_menu ul li a{}
+
+/* content 영역 */
+#content{}
+
+.cont_menu{}
+
+/* img는 인라인 구조 */
+.cont_menu img{
+    vertical-align: bottom;
+}
+
+/* ul은 블럭구조인데 img옆으로 붙게 하려고 구조를 인라인 블럭으로 변경 */
+.cont_menu ul{
+    display: inline-block;
+}
+
+.cont_menu ul li{
+    display: inline-block;
+}
+
+.cont_menu ul li a{
+    display: block;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+.cont_menu ul li a:hover{
+    background-color: pink;
+    /* font-weight: bold; */
+    color: red;
+}
+
+.cont_inner{
+    background: url('../img/style_bar.jpg') no-repeat center top;
+    margin: 10px 0;
+    padding: 15px 0 0 15px;
+}
+
+.cont_inner p{}
+
+.cont_inner p span{
+    color: tomato;
+    font-weight: bold;
+}
+
+/* item 영억 */
+
+.item{
+    width: 860px;
+    /* 925부모의 크기 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+.item li{
+    width: 200px;
+    height: 300px;
+    float: left;
+    border: 1px solid orange;
+    text-align: center;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+}
+
+.item_4 , .item_8{
+    margin: 0 0 20px 0 !important;
+}
+.item li a{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.text{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+    padding: 20px 10px;
+    position: absolute;
+    left: 0;top: 250px;
+    transition: all 1s;
+}
+
+.item li a:hover .text{
+    top: 100px;
+}
+
+.item li a:hover h2{
+    color: red;
+    font-weight: bold;
+}
+
+.text h2{
+    margin-bottom: 15px;
+    color: mediumpurple;
+    font-size: 16px;
+}
+.text .p_1{
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.text .p_2{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: mediumpurple;
+}
+.text .p_3{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item_1{
+    background: url('../img/pro1.jpg') no-repeat;
+}
+.item_2{
+    background: url('../img/pro2.jpg') no-repeat;
+}
+.item_3{
+    background: url('../img/pro3.jpg') no-repeat;
+}
+.item_4{
+    background: url('../img/pro4.jpg') no-repeat;
+}
+.item_5{
+    background: url('../img/pro5.jpg') no-repeat;
+}
+.item_6{
+    background: url('../img/pro6.jpg') no-repeat;
+}
+.item_7{
+    background: url('../img/pro7.jpg') no-repeat;
+}
+.item_8{
+    background: url('../img/pro8.jpg') no-repeat;
+}
+
+.cont_inner2{
+    height: 30px;
+    background: url('../img/style_bar2.jpg') no-repeat;
+}
