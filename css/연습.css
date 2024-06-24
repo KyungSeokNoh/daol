@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.list{
+    /* background-color: blanchedalmond; */
+    overflow: hidden;
+}
+
+/* 8개 li마다 명령어 주기 */
+.list li{
+    float: left;
+    width: calc(1100px / 4);
+    margin-right: 20px;
+    height: 300px;
+    border: 1px solid khaki;
+}
+
+.m_l{
+    margin-left: 20px;
+}
+
+.m_b{
+    margin-bottom: 20px;
+}
+
+.list li:nth-child(odd){
+    /* background: orange; */
+}
+
+.list li:nth-child(even){
+    /* background: tomato; */
+}
+
+.list_1{
+    background: url('../img/pro1.jpg') ;
+    background-size: 100%;
+}
+
+.list_2{
+    background-image: url('../img/pro2.jpg');
+}
+
+.list_3{
+    background-image: url('../img/pro3.jpg');
+}
+
+.list_4{}
+
+.list_5{}
+
+.list_6{}
+
+.list_7{}
+
+.list_8{}
+
+.list li a{
+    /* 인라인 구조 width 상속 못받음 */
+    display: block;
+    /* width 상속 받았음 하지만 height 는 상속 못받음 */
+    height: 100%;
+    position: relative;
+}
+
+.list li a:hover .text{
+    top: 80px;
+}
+
+.text{
+    /* div 블럭 구조 width 상속 받음. */
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    height: 300px;
+    padding: 20px 15px;
+    position: absolute;
+    left: 0;top: 230px;
+    transition: all 0.5s;
+}
+
+.text h2{
+    margin-bottom: 20px;
+}
+
+.text h2:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.text .p_1{
+    color: #ddd;
+    line-height: 2;
+    margin-bottom: 5px;
+    /* letter-spacing: 0px; */
+    /* 글자 간격 코딩 */
+    /* word-spacing: 0px; */
+    /* 단어 간격 */
+}
+
+.text .p_2{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: burlywood;
+    margin-bottom: 5px;
+}
+
+.text .p_3{
+    font-size: 14px;
+    font-weight: bold;
+}
